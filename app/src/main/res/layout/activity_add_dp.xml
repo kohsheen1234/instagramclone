@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.kohsheen.firebasedemoforkoshu.AddDpActivity">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/filterstoolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        />
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width= "200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="120dp"
+        android:id="@+id/displaypic"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/dp_size"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:layout_marginTop="0dp"
+        android:id="@+id/text"
+        android:layout_below="@id/displaypic"
+        android:text="Add a profile photo so your friends know it's you."/>
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addprofilepic"
+        android:background="@drawable/whitebuttons"
+        android:text="Add a Profile Picture"
+        android:textSize="17dp"
+        android:textColor="@color/indigo_500"
+        android:onClick="addDp"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:id="@+id/next"
+        android:text="Next"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:textSize="19dp"
+        android:background="@color/indigo_500"
+        android:textColor="@color/md_white_1000"
+        />
+
+
+
+
+</RelativeLayout>

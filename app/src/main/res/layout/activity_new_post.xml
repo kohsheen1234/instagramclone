@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kohsheen.firebasedemoforkoshu.NewPostActivity">
+
+
+    <include
+    android:id="@+id/filterstoolbar"
+    layout="@layout/filterstoolbar"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent" />
+
+<ProgressBar
+    android:elevation="4dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/uploadImageProgressBar"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:visibility="gone"/>
+
+
+
+
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:gravity="center"
+    android:padding="10dp"
+    android:textColor="@color/indigo_500"
+    android:textSize="16dp"
+    android:text="You are all set now!"
+    android:id="@+id/text"
+    android:layout_below="@+id/filterstoolbar"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/image"
+            android:layout_below="@+id/text"
+            android:id="@+id/newPostImageView"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/curve"
+            android:layout_below="@+id/newPostImageView"
+            android:padding="8dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/titleEditText"
+            android:hint="Write a caption.."
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/descriptionEditText"
+            android:layout_below="@id/titleEditText"
+            android:background="@drawable/curve"
+            android:padding="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:hint="Add a Location"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/md_indigo_300"
+            android:textColor="@color/md_white_1000"
+            android:id="@+id/buttonPost"
+            android:text="Share"/>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

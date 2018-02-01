@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.kohsheen.firebasedemoforkoshu.ProfileActivity">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/signuptoolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="User Name"
+                android:layout_margin="10dp"
+                android:padding="12dp"
+                android:backgroundTint="@color/md_grey_200"
+                android:background="@drawable/curve"
+                android:id="@+id/signUpUserNameEditText"
+                android:inputType="textEmailAddress"/>
+
+
+            <EditText
+                android:id="@+id/fullNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/md_grey_200"
+                android:background="@drawable/curve"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:hint="Full Name"/>
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:background="@drawable/buttons"
+                android:textColor="@color/md_white_1000"
+                android:layout_margin="10dp"
+                android:id="@+id/saveInformationButton"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:id="@+id/logoutButton"
+            android:background="@drawable/whitebuttons"
+            android:text="LOGOUT"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

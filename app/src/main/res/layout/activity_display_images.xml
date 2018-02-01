@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/md_white_1000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kohsheen.firebasedemoforkoshu.DisplayImagesActivity">
+
+
+
+    <include layout="@layout/content_display_images"
+        />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/mLogoutBtn"
+            android:layout_width="29dp"
+            android:elevation="2dp"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:layout_height="25dp"
+            android:textSize="12dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/md_black_1000"
+            android:background="@drawable/logout"
+             />
+
+    </LinearLayout>
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:backgroundTint="@color/md_grey_600"
+        android:tint="@color/md_white_1000"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+</RelativeLayout>

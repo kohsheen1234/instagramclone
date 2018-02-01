@@ -1,0 +1,7 @@
+include ':app',':library'
+
+
+include ':facebook-core'
+include ':facebook-common', ':facebook-login', ':facebook-share', ':facebook-places', ':facebook-applinks', ':facebook-messenger'
+include ':facebook-lytro'
+include ':facebook'

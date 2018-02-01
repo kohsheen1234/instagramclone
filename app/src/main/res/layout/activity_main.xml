@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/editedback"
+
+    tools:context="com.example.kohsheen.firebasedemoforkoshu.MainActivity">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+   android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_centerVertical="true">
+    <ProgressBar
+        android:id="@+id/signUpProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+
+
+
+
+    <ImageView
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/image_size"
+        android:tint="@color/md_white_1000"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_marginTop="20dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/email_image"
+        android:textColor="@color/md_white_1000"
+
+        android:padding="12dp"
+        android:background="@drawable/curve"
+        android:id="@+id/signUpEmailEditText"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_marginTop="20dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/user_image"
+        android:textColor="@color/md_white_1000"
+
+        android:padding="12dp"
+        android:background="@drawable/curve"
+        android:id="@+id/userNameEditText"
+        android:inputType="textEmailAddress"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:inputType="textPassword"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:drawablePadding="10dp"
+        android:padding="12dp"
+        android:drawableLeft="@drawable/password_image"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/curve"
+        android:id="@+id/signUpPasswordEditText"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN WITH FACEBOOK"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textColor="@color/md_white_1000"
+        android:background="@drawable/facebookbutton"
+        android:drawableLeft="@drawable/facebook_image"
+        android:id="@+id/mFacebookBtn"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:layout_marginTop="60dp"
+        android:textSize="16dp"
+
+        android:textColor="@color/md_grey_100"
+        android:background="@drawable/buttons"
+        android:id="@+id/signUpButton"/>
+
+
+
+    <TextView
+        android:id="@+id/navigateToLoginTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/md_white_1000"
+        android:text="Already have an account?Log In here"
+        android:gravity="center_horizontal"/>
+
+</LinearLayout>
+
+
+
+
+
+</RelativeLayout>
+
+
+
+

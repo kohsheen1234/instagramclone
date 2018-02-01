@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <stroke android:color="#000000"
+        android:drawable="@drawable/userdp"
+        android:width="1dp">
+
+    </stroke>
+
+    <item
+        android:drawable="@drawable/dp"
+        android:width="25dp"
+        android:height="25dp"/>
+
+
+
+
+
+
+</layer-list >

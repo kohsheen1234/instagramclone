@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbar_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.Toolbar>
+
+        <include
+            android:id="@+id/signuptoolbar"
+            layout="@layout/filterstoolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+
+
+
+    <!--android:scaleType="centerCrop"-->
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/imageView"
+
+        android:padding="20dp"
+        android:src="@drawable/selfie"/>
+
+
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/choosefromlibrary"
+            android:drawableTop="@drawable/libraryicon"
+            android:backgroundTint="@color/md_grey_800"
+            android:layout_below="@+id/share"
+            android:padding="18dp"
+            android:textColor="@color/md_white_1000"
+            android:layout_height="85dp"
+            android:text="Choose from library"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/choosefromcamera"
+            android:drawableTop="@drawable/cameraicon"
+            android:backgroundTint="@color/md_grey_800"
+            android:padding="18dp"
+            android:layout_below="@id/choosefromlibrary"
+            android:textColor="@color/md_white_1000"
+            android:layout_height="85dp"
+            android:text="choose from camera"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/share"
+        android:layout_marginTop="3dp"
+        android:padding="10dp"
+        android:textSize="14dp"
+        android:layout_below="@id/imageView"
+        android:text="Share your story with your friends!"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="77dp"
+        android:textColor="@color/md_white_1000"
+        android:id="@+id/next"
+        android:textSize="19dp"
+        android:background="@color/md_indigo_300"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+
+
+        android:layout_height="73dp"
+        android:text="Next"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/signuptoolbar"
+        layout="@layout/signuptoolbar"
+
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+
+    <FrameLayout
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="389dp"
+            android:src="@drawable/blurlightsec" />
+
+        <ImageView
+            android:layout_width="109dp"
+            android:layout_height="100dp"
+            android:src="@drawable/circlecamera"
+            android:layout_gravity="center"/>
+
+
+    </FrameLayout>
+
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_height="280dp"-->
+        <!--android:background="@drawable/backgallery"/>-->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="horizontal"
+        >
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/libraryicon"
+        android:backgroundTint="@color/md_red_600"
+        android:padding="25dp"
+
+        android:textColor="@color/md_white_1000"
+        android:layout_height="170dp"
+
+        android:text="Choose from library"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/cameraicon"
+        android:backgroundTint="@color/md_deep_orange_500"
+        android:padding="25dp"
+        android:textColor="@color/md_white_1000"
+        android:layout_height="170dp"
+        android:text="choose from camera"/>
+
+        </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/md_green_500"
+        android:textColor="@color/md_white_1000"
+        android:layout_height="110dp"
+        android:text="Aplly filters"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@color/md_white_1000"
+        android:layout_height="90dp"
+        android:text="Next"/>
+
+</LinearLayout>

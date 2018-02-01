@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splash_screen_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/animation_list"
+    tools:context="com.example.kohsheen.firebasedemoforkoshu.SplashScreen">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        />
+
+    <ImageView
+        android:layout_below="@+id/animation_view"
+        android:layout_width="wrap_content"
+        android:paddingLeft="64dp"
+        android:paddingRight="64dp"
+        android:layout_height="150dp"
+        android:src="@drawable/insta"
+        android:tint="@color/md_white_1000"
+        />
+</RelativeLayout>
